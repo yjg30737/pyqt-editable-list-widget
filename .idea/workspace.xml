@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a3a30f2-bac4-4022-af7c-5809b1af6687" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/editor_list_widget/editor_list_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/editor_list_widget/editor_list_widget.py" afterDir="false" />
-    </list>
+    <list default="true" id="6a3a30f2-bac4-4022-af7c-5809b1af6687" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -220,7 +218,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637387771486</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add double click events">
+      <created>1637387856952</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637387856952</updated>
+    </task>
+    <task id="LOCAL-00011" summary="remove item double clicked event (again, it doesn't work for some reasons as always happend btw) and add new one and it worked right in front my eyes">
+      <created>1637388059981</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1637388059981</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -235,6 +247,8 @@
     <MESSAGE value="add annotation" />
     <MESSAGE value="add helpful flags" />
     <MESSAGE value="remove flags (doesnt work for some reasons)&#10;and make it available as my own way" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove flags (doesnt work for some reasons)&#10;and make it available as my own way" />
+    <MESSAGE value="add double click events" />
+    <MESSAGE value="remove item double clicked event (again, it doesn't work for some reasons as always happend btw) and add new one and it worked right in front my eyes" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove item double clicked event (again, it doesn't work for some reasons as always happend btw) and add new one and it worked right in front my eyes" />
   </component>
 </project>

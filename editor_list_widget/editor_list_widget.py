@@ -22,6 +22,7 @@ class EditorListWidget(QListWidget):
     def mouseDoubleClickEvent(self, e):
         item = self.itemAt(e.pos())
         self.openPersistentEditor(item)
+        self.__persistent_editor_activated_flag = True
         return super().mouseDoubleClickEvent(e)
 
     def keyPressEvent(self, e): # make editor closed when user pressed enter
@@ -32,6 +33,7 @@ class EditorListWidget(QListWidget):
             item = self.currentItem()
             if item:
                 self.openPersistentEditor(item)
+                self.__persistent_editor_activated_flag = True
         return super().keyPressEvent(e)
 
     def closeIfPersistentEditorStillOpen(self): # Check if user are editing item
