@@ -19,9 +19,10 @@ class EditorListWidget(QListWidget):
             self.closeIfPersistentEditorStillOpen()
         return super().mousePressEvent(e)
 
-    def itemDoubleClicked(self, item: QListWidgetItem) -> None:
+    def mouseDoubleClickEvent(self, e):
+        item = self.itemAt(e.pos())
         self.openPersistentEditor(item)
-        return super().itemDoubleClicked(item)
+        return super().mouseDoubleClickEvent(e)
 
     def keyPressEvent(self, e): # make editor closed when user pressed enter
         if e.key() == Qt.Key_Return:
