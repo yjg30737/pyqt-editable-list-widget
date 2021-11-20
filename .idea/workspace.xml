@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a3a30f2-bac4-4022-af7c-5809b1af6687" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor_list_widget/editor_list_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/editor_list_widget/editor_list_widget.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637385615186</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix something">
+      <created>1637386943410</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637386943411</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -203,6 +210,7 @@
     <MESSAGE value="modify py" />
     <MESSAGE value="fix the inconsistency" />
     <MESSAGE value="checkout to main (not master, name &quot;master&quot; is obsolete)" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkout to main (not master, name &quot;master&quot; is obsolete)" />
+    <MESSAGE value="fix something" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix something" />
   </component>
 </project>
