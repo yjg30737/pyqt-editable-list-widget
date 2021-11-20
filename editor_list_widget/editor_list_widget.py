@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QListWidget, QAbstractItemView
+from PyQt5.QtWidgets import QListWidget
 from PyQt5.QtCore import Qt
 
 
@@ -13,7 +13,6 @@ class EditorListWidget(QListWidget):
         self.openPersistentEditor(item) # open the editor
         self.setFocus()
         self.__persistent_editor_activated_flag = True
-        self.setEditTriggers(QAbstractItemView.DoubleClicked | QAbstractItemView.EditKeyPressed)
 
     def mousePressEvent(self, e): # make editor closed when user clicked somewhere else
         if self.__persistent_editor_activated_flag:
@@ -24,6 +23,10 @@ class EditorListWidget(QListWidget):
         if e.key() == Qt.Key_Return:
             self.closeIfPersistentEditorStillOpen()
             # return --> If you insert this then it won't make you consecutively add the next item.
+        elif e.key() == Qt.Key_F2:
+            item = self.currentItem()
+            if item:
+                self.openPersistentEditor(item)
         return super().keyPressEvent(e)
 
     def closeIfPersistentEditorStillOpen(self): # Check if user are editing item
