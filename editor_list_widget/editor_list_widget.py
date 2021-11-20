@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QListWidget
+from PyQt5.QtWidgets import QListWidget, QAbstractItemView
 from PyQt5.QtCore import Qt
 
 
@@ -13,6 +13,7 @@ class EditorListWidget(QListWidget):
         self.openPersistentEditor(item) # open the editor
         self.setFocus()
         self.__persistent_editor_activated_flag = True
+        self.setEditTriggers(QAbstractItemView.DoubleClicked | QAbstractItemView.EditKeyPressed)
 
     def mousePressEvent(self, e): # make editor closed when user clicked somewhere else
         if self.__persistent_editor_activated_flag:
