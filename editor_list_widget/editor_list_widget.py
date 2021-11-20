@@ -22,6 +22,7 @@ class EditorListWidget(QListWidget):
     def keyPressEvent(self, e):
         if e.key() == Qt.Key_Return:
             self.closeIfPersistentEditorStillOpen()
+            return
         return super().keyPressEvent(e)
 
     def closeIfPersistentEditorStillOpen(self):
