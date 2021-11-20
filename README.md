@@ -2,7 +2,15 @@
 Easily editable list widget
 
 ## General Info
-When you are suppposed to add the item to editor-list-widget, editor-list-widget will automatically open the editor to let you edit right after that happened. If you press enter or click something else that editor will be closed. 
+When you are suppposed to add the item to editor-list-widget, editor-list-widget will automatically open the editor to let you edit right after that happened. If you press enter, you can conveniently add new item. Clicking something else that editor will be closed.
+
+## Requirements
+PyQt5 >= 5.8
+
+## Setup
+```
+pip install git+https://github.com/yjg30737/editor-list-widget.git --upgrade
+```
 
 ## Code
 
@@ -28,6 +36,7 @@ class EditorListWidget(QListWidget):
     def keyPressEvent(self, e): # make editor closed when user pressed enter 
         if e.key() == Qt.Key_Return:
             self.closeIfPersistentEditorStillOpen()
+            # return --> If you insert this then it won't make you consecutively add the next item. 
         return super().keyPressEvent(e)
 
     def closeIfPersistentEditorStillOpen(self): # Check if user are editing item 
