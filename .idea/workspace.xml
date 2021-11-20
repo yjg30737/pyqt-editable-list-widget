@@ -232,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637388059981</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix some minor issues here and there">
+      <created>1637388225375</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1637388225375</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -249,6 +256,7 @@
     <MESSAGE value="remove flags (doesnt work for some reasons)&#10;and make it available as my own way" />
     <MESSAGE value="add double click events" />
     <MESSAGE value="remove item double clicked event (again, it doesn't work for some reasons as always happend btw) and add new one and it worked right in front my eyes" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove item double clicked event (again, it doesn't work for some reasons as always happend btw) and add new one and it worked right in front my eyes" />
+    <MESSAGE value="fix some minor issues here and there" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix some minor issues here and there" />
   </component>
 </project>

@@ -19,7 +19,7 @@ class EditorListWidget(QListWidget):
             self.closeIfPersistentEditorStillOpen()
         return super().mousePressEvent(e)
 
-    def mouseDoubleClickEvent(self, e):
+    def mouseDoubleClickEvent(self, e): # Let user edit the item when double clicking certain item
         item = self.itemAt(e.pos())
         self.openPersistentEditor(item)
         self.__persistent_editor_activated_flag = True
@@ -29,7 +29,7 @@ class EditorListWidget(QListWidget):
         if e.key() == Qt.Key_Return:
             self.closeIfPersistentEditorStillOpen()
             # return --> If you insert this then it won't make you consecutively add the next item.
-        elif e.key() == Qt.Key_F2:
+        elif e.key() == Qt.Key_F2: # Let user edit the item when pressing F2
             item = self.currentItem()
             if item:
                 self.openPersistentEditor(item)
