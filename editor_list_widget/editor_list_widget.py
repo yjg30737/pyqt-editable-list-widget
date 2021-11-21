@@ -6,6 +6,7 @@ class EditorListWidget(QListWidget):
     def __init__(self):
         super().__init__()
         self.__persistent_editor_activated_flag = False
+        self.currentItemChanged.connect(self.__currentItemChanged)
 
     def addItem(self, item):
         super().addItem(item)
@@ -35,6 +36,9 @@ class EditorListWidget(QListWidget):
                 self.openPersistentEditor(item)
                 self.__persistent_editor_activated_flag = True
         return super().keyPressEvent(e)
+
+    def __currentItemChanged(self, current: QListWidgetItem, previous: QListWidgetItem) -> None:
+        self.closeIfPersistentEditorStillOpen()
 
     def closeIfPersistentEditorStillOpen(self): # Check if user are editing item
         item = self.currentItem()
