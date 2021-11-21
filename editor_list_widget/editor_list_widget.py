@@ -6,7 +6,6 @@ class EditorListWidget(QListWidget):
     def __init__(self):
         super().__init__()
         self.__persistent_editor_activated_flag = False
-        self.currentItemChanged.connect(self.__currentItemChanged)
 
     def addItem(self, item):
         super().addItem(item)
