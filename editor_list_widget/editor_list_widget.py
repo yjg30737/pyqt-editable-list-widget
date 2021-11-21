@@ -27,7 +27,7 @@ class EditorListWidget(QListWidget):
         return super().mouseDoubleClickEvent(e)
 
     def keyPressEvent(self, e): # make editor closed when user pressed enter
-        if e.key() == Qt.Key_Return:
+        if e.key() == Qt.Key_Return or e.key() == 16777235 or e.key() == 16777237:
             self.closeIfPersistentEditorStillOpen()
             # return --> If you insert this then it won't make you consecutively add the next item.
         elif e.key() == Qt.Key_F2: # Let user edit the item when pressing F2
@@ -36,9 +36,6 @@ class EditorListWidget(QListWidget):
                 self.openPersistentEditor(item)
                 self.__persistent_editor_activated_flag = True
         return super().keyPressEvent(e)
-
-    def __currentItemChanged(self, current: QListWidgetItem, previous: QListWidgetItem) -> None:
-        self.closeIfPersistentEditorStillOpen()
 
     def closeIfPersistentEditorStillOpen(self): # Check if user are editing item
         item = self.currentItem()
