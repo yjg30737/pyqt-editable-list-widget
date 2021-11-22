@@ -20,4 +20,4 @@ Before add item, you have to write `closeIfPersistentEditorStillOpen()`.
 
 ## Example
 
-![editorListWidgetExample](./example/editorListWidgetExample.png)
+![editorListWidgetExample](./example/editorListWidgetExample.gif)
