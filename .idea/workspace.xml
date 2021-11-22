@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a3a30f2-bac4-4022-af7c-5809b1af6687" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/editor_list_widget/editor_list_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/editor_list_widget/editor_list_widget.py" afterDir="false" />
-    </list>
+    <list default="true" id="6a3a30f2-bac4-4022-af7c-5809b1af6687" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637539728178</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="desperate attempt to fix potential issue #2">
+      <created>1637539794922</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1637539794922</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -216,6 +221,7 @@
     <MESSAGE value="sorry but something went wrong. so revert it" />
     <MESSAGE value="Never mind, my bad.&#10;Anyways, I add the option of make consecutive adding item by pressing enter enable/disable." />
     <MESSAGE value="desperate attempt to fix potential issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="desperate attempt to fix potential issue" />
+    <MESSAGE value="desperate attempt to fix potential issue #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="desperate attempt to fix potential issue #2" />
   </component>
 </project>
