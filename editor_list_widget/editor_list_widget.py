@@ -29,15 +29,16 @@ class EditorListWidget(QListWidget):
         self.__persistent_editor_activated_flag = True
         return super().mouseDoubleClickEvent(e)
 
-    def keyPressEvent(self, e): # make editor closed when user pressed enter
-        if e.key() == Qt.Key_Return:
+    def keyPressEvent(self, e):
+        if e.key() == Qt.Key_Return: # make editor closed when user pressed enter
             self.closeIfPersistentEditorStillOpen()
             if self.__consecutive_add_when_enter_pressed_flag:
                 pass
             else:
                 return
-        elif e.key() == 16777235 or e.key() == 16777237:
+        elif e.key() == 16777235 or e.key() == 16777237: # make editor closed when user pressed up or down button
             self.closeIfPersistentEditorStillOpen()
+            return super().keyPressEvent(e)
         elif e.key() == Qt.Key_F2: # Let user edit the item when pressing F2
             item = self.currentItem()
             if item:
