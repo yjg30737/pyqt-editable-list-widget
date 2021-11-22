@@ -1,12 +1,21 @@
 # editor-list-widget
 Easily editable list widget
 
+## Table of Contents
+* [General Info](#general-info)
+* [Requirements](#requirements)
+* [Setup](#setup)
+* [Code Example](#code-example)
+* [Preview](#preview)
+
 ## General Info
 When you are suppposed to add the item to editor-list-widget, editor-list-widget will automatically open the editor to let you edit right after that happened. If you press enter or up or down, Editor will be closed so let you stop editing.
 
 If you want to add the item consecutively when pressing enter, use `setConsecutiveAddWhenEnterPressed(f: bool)`. You can conveniently add a new item. Clicking something else make editor close.
 
 You can edit certain item to double click it or press F2 on the selected item.
+
+Before add item, you have to write `closeIfPersistentEditorStillOpen()`. If you don't, Old editor still remain open even though new editor is opened. 
 
 ## Requirements
 PyQt5 >= 5.8
@@ -15,10 +24,6 @@ PyQt5 >= 5.8
 ```
 pip install git+https://github.com/yjg30737/editor-list-widget.git --upgrade
 ```
-
-## Usage
-
-Before add item, you have to write `closeIfPersistentEditorStillOpen()`. If you don't, Old editor still remain open even though new editor is opened. 
 
 ## Code Example
 
