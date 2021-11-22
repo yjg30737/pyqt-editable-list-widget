@@ -15,7 +15,7 @@ If you want to add the item consecutively when pressing enter, use `setConsecuti
 
 You can edit certain item to double click it or press F2 on the selected item.
 
-Before add item, you have to write `closeIfPersistentEditorStillOpen()`. If you don't, Old editor still remain open even though new editor is opened. 
+Before add item, you have to write `closeIfPersistentEditorStillOpen()`. If you don't, old editor still remain open even though new editor was already opened. 
 
 ## Requirements
 PyQt5 >= 5.8
