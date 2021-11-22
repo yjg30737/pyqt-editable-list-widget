@@ -6,6 +6,7 @@ class EditorListWidget(QListWidget):
     def __init__(self):
         super().__init__()
         self.__persistent_editor_activated_flag = False
+        self.__consecutive_add_when_enter_pressed_flag = False
 
     def addItem(self, item):
         super().addItem(item)
@@ -13,6 +14,9 @@ class EditorListWidget(QListWidget):
         self.openPersistentEditor(item) # open the editor
         self.setFocus()
         self.__persistent_editor_activated_flag = True
+
+    def setConsecutiveAddWhenEnterPressed(self, f: bool):
+        self.__consecutive_add_when_enter_pressed_flag = f
 
     def mousePressEvent(self, e): # make editor closed when user clicked somewhere else
         if self.__persistent_editor_activated_flag:
@@ -26,9 +30,12 @@ class EditorListWidget(QListWidget):
         return super().mouseDoubleClickEvent(e)
 
     def keyPressEvent(self, e): # make editor closed when user pressed enter
-        if e.key() == Qt.Key_Return:
+        if e.key() == Qt.Key_Return or e.key() == 16777235 or e.key() == 16777237:
             self.closeIfPersistentEditorStillOpen()
-            # return --> If you insert this then it won't make you consecutively add the next item.
+            if self.__consecutive_add_when_enter_pressed_flag:
+                pass
+            else:
+                return
         elif e.key() == Qt.Key_F2: # Let user edit the item when pressing F2
             item = self.currentItem()
             if item:
