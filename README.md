@@ -17,3 +17,7 @@ pip install git+https://github.com/yjg30737/editor-list-widget.git --upgrade
 ## Usage
 
 Before add item, you have to write `closeIfPersistentEditorStillOpen()`.
+
+## Example
+
+![editorListWidgetExample](./example/editorListWidgetExample.png)
