@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import QListWidget, QListWidgetItem
 from PyQt5.QtCore import Qt
 
 
-class EditorListWidget(QListWidget):
+class EditableListWidget(QListWidget):
     def __init__(self):
         super().__init__()
         self.__persistent_editor_activated_flag = False

@@ -32,9 +32,10 @@ import sys
 
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QPushButton, QApplication, QCheckBox, QDialog, \
-    QVBoxLayout, QListWidgetItem, QWidget, QHBoxLayout, QLabel
-from editor_list_widget import EditorListWidget
+from PyQt5.QtWidgets import QPushButton, QApplication, QCheckBox, QDialog,
+
+QVBoxLayout, QListWidgetItem, QWidget, QHBoxLayout, QLabel
+from pyqt_editable_list_widget import EditableListWidget
 
 
 class Dialog(QDialog):
@@ -53,7 +54,7 @@ class Dialog(QDialog):
         topWidget = QWidget()
         topWidget.setLayout(lay)
         # topWidget end
-        
+
         # middleWidget start
         allChkBox = QCheckBox('Check All')
 
@@ -113,9 +114,9 @@ class Dialog(QDialog):
         middleWidget = QWidget()
         middleWidget.setLayout(lay)
         # middleWidget end
-        
+
         # bottomWidget
-        self.__bottomWidget = EditorListWidget()
+        self.__bottomWidget = EditableListWidget()
 
         # mainWidget start
         lay = QVBoxLayout()
@@ -132,9 +133,9 @@ class Dialog(QDialog):
 
         self.setLayout(lay)
         # mainWidget end
-        
+
     def __add(self):
-        self.__bottomWidget.closeIfPersistentEditorStillOpen() # You have to call this.
+        self.__bottomWidget.closeIfPersistentEditorStillOpen()  # You have to call this.
         item = QListWidgetItem('abc')
         self.__bottomWidget.addItem(item)
 
