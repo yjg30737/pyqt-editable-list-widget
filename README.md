@@ -1,5 +1,5 @@
-# editor-list-widget
-Easily editable list widget
+# pyqt-editable-list-widget
+Easily editable QListWidget
 
 ## Table of Contents
 * [General Info](#general-info)
@@ -9,7 +9,9 @@ Easily editable list widget
 * [Preview](#preview)
 
 ## General Info
-When you are suppposed to add the item to editor-list-widget, editor-list-widget will automatically open the editor to let you edit right after that happened. If you press enter or up or down, Editor will be closed so let you stop editing.
+In this QListWidget, persistent editor is automatically activated/deactivated.
+
+If you press enter or up or down, Editor will be closed so let you stop editing.
 
 If you want to add the item consecutively when pressing enter, use `setConsecutiveAddWhenEnterPressed(f: bool)`. You can conveniently add a new item. Clicking something else make editor close.
 
