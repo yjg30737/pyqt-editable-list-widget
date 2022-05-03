@@ -24,7 +24,7 @@ PyQt5 >= 5.8
 
 ## Setup
 ```
-pip install git+https://github.com/yjg30737/editor-list-widget.git --upgrade
+pip install git+https://github.com/yjg30737/pyqt-editable-list-widget.git --upgrade
 ```
 
 ## Code Example
