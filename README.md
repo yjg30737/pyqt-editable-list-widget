@@ -23,9 +23,7 @@ You have to call `closeIfPersistentEditorStillOpen()` before `addItem`. If you d
 PyQt5 >= 5.8
 
 ## Setup
-```
-pip install git+https://github.com/yjg30737/pyqt-editable-list-widget.git --upgrade
-```
+`pip3 install git+https://github.com/yjg30737/pyqt-editable-list-widget.git --upgrade`
 
 ## Code Example
 
