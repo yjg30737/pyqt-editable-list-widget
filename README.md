@@ -9,15 +9,15 @@ Easily editable QListWidget
 * [Preview](#preview)
 
 ## General Info
-In this QListWidget, persistent editor is automatically activated/deactivated.
+In this QListWidget, persistent editor is automatically activated/deactivated when calling the `addItem`.
 
-If you press enter or up or down, Editor will be closed so let you stop editing.
+Persistent editor will be closed if you press enter or up or down key or click somewhere else after editing.
 
-If you want to add the item consecutively when pressing enter, use `setConsecutiveAddWhenEnterPressed(f: bool)`. You can conveniently add a new item. Clicking something else make editor close.
+If you want to add the item consecutively, use `setConsecutiveAddWhenEnterPressed(f: bool)`. You can add a new item again.
 
-You can edit certain item to double click it or press F2 on the selected item.
+You can edit existing items to double-click it or press F2.
 
-Before add item, you have to write `closeIfPersistentEditorStillOpen()`. If you don't, old editor still remain open even though new editor was already opened. 
+You have to call `closeIfPersistentEditorStillOpen()` before `addItem`. If you don't, old editor still remain open even though new editor was already opened.
 
 ## Requirements
 PyQt5 >= 5.8
