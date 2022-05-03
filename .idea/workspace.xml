@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a3a30f2-bac4-4022-af7c-5809b1af6687" name="Changes" comment="add example">
-      <change afterPath="$PROJECT_DIR$/pyqt_editable_list_widget/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor_list_widget.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyqt_editable_list_widget.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="6a3a30f2-bac4-4022-af7c-5809b1af6687" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor_list_widget/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor_list_widget/editor_list_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyqt_editable_list_widget/editableListWidget.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/tende/PycharmProjects/editor_list_widget",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -220,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637540097006</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Rename project">
+      <created>1651560866916</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1651560866916</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -246,6 +247,7 @@
     <MESSAGE value="desperate attempt to fix potential issue" />
     <MESSAGE value="desperate attempt to fix potential issue #2" />
     <MESSAGE value="add example" />
-    <option name="LAST_COMMIT_MESSAGE" value="add example" />
+    <MESSAGE value="Rename project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename project" />
   </component>
 </project>
