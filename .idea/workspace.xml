@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a3a30f2-bac4-4022-af7c-5809b1af6687" name="Changes" comment="">
+    <list default="true" id="6a3a30f2-bac4-4022-af7c-5809b1af6687" name="Changes" comment="Update setup.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +46,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/tende/PycharmProjects/editor_list_widget",
+    "last_opened_file_path": "C:/Users/tende/PycharmProjects/pyqt_editable_list_widget",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable"
   }
 }]]></component>
@@ -221,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651560866916</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Update setup.py">
+      <created>1651562001727</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1651562001727</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -248,6 +255,7 @@
     <MESSAGE value="desperate attempt to fix potential issue #2" />
     <MESSAGE value="add example" />
     <MESSAGE value="Rename project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename project" />
+    <MESSAGE value="Update setup.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update setup.py" />
   </component>
 </project>
