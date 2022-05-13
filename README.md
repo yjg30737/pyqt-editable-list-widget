@@ -144,7 +144,3 @@ if __name__ == "__main__":
     dialog.show()
     sys.exit(app.exec_())
 ```
-
-## Preview
-
-![editorListWidgetExample](./example/editorListWidgetExample.gif)
