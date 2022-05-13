@@ -1,13 +1,6 @@
 # pyqt-editable-list-widget
 Easily editable QListWidget
 
-## Table of Contents
-* [General Info](#general-info)
-* [Requirements](#requirements)
-* [Setup](#setup)
-* [Code Example](#code-example)
-* [Preview](#preview)
-
 ## General Info
 In this QListWidget, persistent editor is automatically activated/deactivated when calling the `addItem`.
 
